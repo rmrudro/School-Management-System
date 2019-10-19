@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="Default.aspx" title="Home" description="Home Page" >
+    <!--root start-->
+    <siteMapNode url="#" title="Students"  description="Students Page" >
+      <!--sub root start-->
+      <siteMapNode url="ApplyOnline.aspx" title="Apply Online"  description="Students Apply Online" />
+      <!--sub root start-->
+    </siteMapNode>
+    <siteMapNode url="AboutUs.aspx" title="About Us"  description="AboutUs Page" />
+    <siteMapNode url="ContactUs.aspx" title="Contact Us"  description="ContacUs Page" />
+    <!--root end-->
+  </siteMapNode>
+</siteMap>

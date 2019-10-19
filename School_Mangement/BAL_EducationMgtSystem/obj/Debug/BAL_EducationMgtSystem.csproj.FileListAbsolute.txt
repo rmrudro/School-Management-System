@@ -1,0 +1,36 @@
+D:\Projects\Projects\Abaa\AbaacorpDesktop\App\SchoolMgtSystem\EducationMgtSystem\BAL_EducationMgtSystem\bin\Debug\BAL_EducationMgtSystem.dll
+D:\Projects\Projects\Abaa\AbaacorpDesktop\App\SchoolMgtSystem\EducationMgtSystem\BAL_EducationMgtSystem\bin\Debug\BAL_EducationMgtSystem.pdb
+D:\Projects\Projects\Abaa\AbaacorpDesktop\App\SchoolMgtSystem\EducationMgtSystem\BAL_EducationMgtSystem\bin\Debug\BEL_EducationMgtSystem.dll
+D:\Projects\Projects\Abaa\AbaacorpDesktop\App\SchoolMgtSystem\EducationMgtSystem\BAL_EducationMgtSystem\bin\Debug\DAL_EducationMgtSystem.dll
+D:\Projects\Projects\Abaa\AbaacorpDesktop\App\SchoolMgtSystem\EducationMgtSystem\BAL_EducationMgtSystem\bin\Debug\BEL_EducationMgtSystem.pdb
+D:\Projects\Projects\Abaa\AbaacorpDesktop\App\SchoolMgtSystem\EducationMgtSystem\BAL_EducationMgtSystem\bin\Debug\DAL_EducationMgtSystem.pdb
+D:\Projects\Projects\Abaa\AbaacorpDesktop\App\SchoolMgtSystem\EducationMgtSystem\BAL_EducationMgtSystem\obj\Debug\BAL_EducationMgtSystem.csprojResolveAssemblyReference.cache
+D:\Projects\Projects\Abaa\AbaacorpDesktop\App\SchoolMgtSystem\EducationMgtSystem\BAL_EducationMgtSystem\obj\Debug\BAL_EducationMgtSystem.dll
+D:\Projects\Projects\Abaa\AbaacorpDesktop\App\SchoolMgtSystem\EducationMgtSystem\BAL_EducationMgtSystem\obj\Debug\BAL_EducationMgtSystem.pdb
+F:\DesktopApplication\PROJECTS\SchoolMgtSystem\EducationMgtSystem\BAL_EducationMgtSystem\bin\Debug\BAL_EducationMgtSystem.dll
+F:\DesktopApplication\PROJECTS\SchoolMgtSystem\EducationMgtSystem\BAL_EducationMgtSystem\bin\Debug\BAL_EducationMgtSystem.pdb
+F:\DesktopApplication\PROJECTS\SchoolMgtSystem\EducationMgtSystem\BAL_EducationMgtSystem\bin\Debug\BEL_EducationMgtSystem.dll
+F:\DesktopApplication\PROJECTS\SchoolMgtSystem\EducationMgtSystem\BAL_EducationMgtSystem\bin\Debug\DAL_EducationMgtSystem.dll
+F:\DesktopApplication\PROJECTS\SchoolMgtSystem\EducationMgtSystem\BAL_EducationMgtSystem\bin\Debug\BEL_EducationMgtSystem.pdb
+F:\DesktopApplication\PROJECTS\SchoolMgtSystem\EducationMgtSystem\BAL_EducationMgtSystem\bin\Debug\DAL_EducationMgtSystem.pdb
+F:\DesktopApplication\PROJECTS\SchoolMgtSystem\EducationMgtSystem\BAL_EducationMgtSystem\obj\Debug\ResolveAssemblyReference.cache
+F:\DesktopApplication\PROJECTS\SchoolMgtSystem\EducationMgtSystem\BAL_EducationMgtSystem\obj\Debug\BAL_EducationMgtSystem.dll
+F:\DesktopApplication\PROJECTS\SchoolMgtSystem\EducationMgtSystem\BAL_EducationMgtSystem\obj\Debug\BAL_EducationMgtSystem.pdb
+E:\Help\Others\zBKP\SchoolMgtSystem\EducationMgtSystem\BAL_EducationMgtSystem\bin\Debug\BAL_EducationMgtSystem.dll
+E:\Help\Others\zBKP\SchoolMgtSystem\EducationMgtSystem\BAL_EducationMgtSystem\bin\Debug\BAL_EducationMgtSystem.pdb
+E:\Help\Others\zBKP\SchoolMgtSystem\EducationMgtSystem\BAL_EducationMgtSystem\bin\Debug\BEL_EducationMgtSystem.dll
+E:\Help\Others\zBKP\SchoolMgtSystem\EducationMgtSystem\BAL_EducationMgtSystem\bin\Debug\DAL_EducationMgtSystem.dll
+E:\Help\Others\zBKP\SchoolMgtSystem\EducationMgtSystem\BAL_EducationMgtSystem\bin\Debug\BEL_EducationMgtSystem.pdb
+E:\Help\Others\zBKP\SchoolMgtSystem\EducationMgtSystem\BAL_EducationMgtSystem\bin\Debug\DAL_EducationMgtSystem.pdb
+E:\Help\Others\zBKP\SchoolMgtSystem\EducationMgtSystem\BAL_EducationMgtSystem\obj\Debug\ResolveAssemblyReference.cache
+E:\Help\Others\zBKP\SchoolMgtSystem\EducationMgtSystem\BAL_EducationMgtSystem\obj\Debug\BAL_EducationMgtSystem.dll
+E:\Help\Others\zBKP\SchoolMgtSystem\EducationMgtSystem\BAL_EducationMgtSystem\obj\Debug\BAL_EducationMgtSystem.pdb
+C:\Users\ABCO-2\Desktop\School Mangement\BAL_EducationMgtSystem\bin\Debug\BAL_EducationMgtSystem.dll
+C:\Users\ABCO-2\Desktop\School Mangement\BAL_EducationMgtSystem\bin\Debug\BAL_EducationMgtSystem.pdb
+C:\Users\ABCO-2\Desktop\School Mangement\BAL_EducationMgtSystem\bin\Debug\BEL_EducationMgtSystem.dll
+C:\Users\ABCO-2\Desktop\School Mangement\BAL_EducationMgtSystem\bin\Debug\DAL_EducationMgtSystem.dll
+C:\Users\ABCO-2\Desktop\School Mangement\BAL_EducationMgtSystem\bin\Debug\BEL_EducationMgtSystem.pdb
+C:\Users\ABCO-2\Desktop\School Mangement\BAL_EducationMgtSystem\bin\Debug\DAL_EducationMgtSystem.pdb
+C:\Users\ABCO-2\Desktop\School Mangement\BAL_EducationMgtSystem\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\ABCO-2\Desktop\School Mangement\BAL_EducationMgtSystem\obj\Debug\BAL_EducationMgtSystem.dll
+C:\Users\ABCO-2\Desktop\School Mangement\BAL_EducationMgtSystem\obj\Debug\BAL_EducationMgtSystem.pdb

@@ -1,0 +1,25 @@
+﻿.footer_box
+{
+    padding: 10px;
+    height: auto;
+    background: #f1f1f1;
+    border-top: #ccc solid 1px;
+    border-bottom: #ccc solid 0px;
+}
+
+/*--------------------------------*/
+.copyright
+{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: table;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.copyright p
+{
+    margin-bottom: 0px;
+    color: #82758A;
+}

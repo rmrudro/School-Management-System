@@ -1,0 +1,227 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="EducationMgtSystem_Web.admin.Site" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ajaxToolkit" %>
+<!DOCTYPE html>
+<html lang="en">
+<head id="Head1" runat="server">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="Education Mgt System, Education, system" />
+    <meta name="robots" content="default, follow" />
+    <meta name="author" content="Administrator" />
+    <meta name="googlebot" content="noodp" />
+    <meta name="application-name" content="EducationMgtSystem_Web" />
+    <link rel="Shortcut Icon" href="http://education.com/Resources/ico/fvicon.png" />
+    <link href="Style/global_style.css" rel="stylesheet" type="text/css" />
+    <link href="Style/layout_style.css" rel="stylesheet" type="text/css" />
+    <link href="Style/font.css" rel="stylesheet" type="text/css" />
+    <link href="Style/default_style.css" rel="stylesheet" type="text/css" />
+    <!-- =====================menu link start ======================-->
+    <link rel="stylesheet" type="text/css" href="menu/ddsmoothmenu.css" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+    <script type="text/javascript" src="menu/ddsmoothmenu.js"></script>
+    <script type="text/javascript">
+        ddsmoothmenu.init({ mainmenuid: "smoothmenu1", orientation: 'h', classname: 'ddsmoothmenu', contentsource: "markup" })
+    </script>
+    <!--=================== menu link End===================== -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script type="text/javascript" src="v_menu/ddaccordion.js"></script>
+    <script type="text/javascript" src="v_menu/ddmenu.js"></script>
+    <link href="v_menu/ddmenu_style.css" rel="stylesheet" type="text/css" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body id="page">
+    <%------------------------------container Section-------------------------------%>
+    <div id="container">
+        <form id="form1" runat="server">
+        <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+        <%------------------------------Header Section-------------------------------%>
+        <div id="header">
+            <div class="header_box">
+                <div class="logo">
+                    <a href="Default.aspx" title="Home">
+                        <h2>
+                            ABCOIT Education Mgt. System</h2>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <%------------------------------Header Section-------------------------------%>
+        <%------------------------------navigation Section-------------------------------%>
+        <div id="navigation">
+            <div class="navigation_box">
+                <div id="smoothmenu1" class="ddsmoothmenu">
+                    <ul>
+                        <li><a href="Default.aspx" title="Home Page">
+                            <img src="menu/home.png"></a></li>
+                        <li><a href="StudentsAdd.aspx" title="Students">
+                            <img src="menu/add.png"></a></li>
+                        <li><a href="StudentsAdd.aspx" title="Account">
+                            <img src="menu/account.png"></a></li>
+                        <li><a class="last" href="StudentsAdd.aspx" title="Reports">
+                            <img src="menu/report.png"></a></li>
+                    </ul>
+                </div>
+                <div class="User_LoginPanel">
+                    <asp:Panel ID="User_LoginView" runat="server">
+                        <asp:Label ID="LblAuthenticatedUser" runat="server" CssClass="user_label"></asp:Label>
+                        <asp:LinkButton ID="LogOut" runat="server" OnClick="LogOut_Click" Visible="false">Logout</asp:LinkButton>
+                    </asp:Panel>
+                </div>
+            </div>
+        </div>
+        <%------------------------------navigation Section-------------------------------%>
+        <%------------------------------content Section-------------------------------%>
+        <div id="content">
+            <div class="content_box">
+                <div class="content_box_aside">
+                    <div class="glossymenu">
+                        <a class="menuitem" href="Default.aspx">Home Page</a> <a class="menuitem submenuheader"
+                            href="#">Student</a>
+                        <div class="submenu">
+                            <ul>
+                                <li><a href="StudentsAdd.aspx">Add New Student</a></li>
+                                <li><a href="StudentsList.aspx">Student List</a></li>
+                                <li><a href="StudentsAttendence.aspx">Student Attendence</a></li>
+                            </ul>
+                        </div>
+                        <a class="menuitem submenuheader" href="#">Fees Setup</a>
+                        <div class="submenu">
+                            <ul>
+                                <li><a href="FeesInstallment.aspx">Fees Installment</a></li>
+                                <li><a href="FeesInstallmentView.aspx">View Installment</a></li>
+                            </ul>
+                        </div>
+                        <a class="menuitem submenuheader" href="#">Routine Setup</a>
+                        <div class="submenu">
+                            <ul>
+                                <li><a href="ClassRoutineAdd.aspx">Add Class Routine</a></li>
+                                <li><a href="ClassRoutineView.aspx">View Routine</a></li>
+                            </ul>
+                        </div>
+                        <a class="menuitem submenuheader" href="#">Library Setup</a>
+                        <div class="submenu">
+                            <ul>
+                                <li><a href="BookAdd.aspx">Add Book</a></li>
+                                <li><a href="BookView.aspx">View Book</a></li>
+                                <li><a href="BookBorrowCreate.aspx">Create Book Borrow</a></li>
+                                <li><a href="BookBorrowerList.aspx">Borrower List</a></li>
+                                <li><a href="BookAccept.aspx">Accept Book</a></li>
+                                <li><a href="BookLibraryMemberAdd.aspx">Add Library Member</a></li>
+                                <li><a href="BookLibraryMemberView.aspx">View Library Member</a></li>
+                            </ul>
+                        </div>
+                        <a class="menuitem submenuheader" href="#">Hostel Management</a>
+                        <div class="submenu">
+                            <ul>
+                                <li><a href="HostelManagement.aspx">Hostel Management</a></li>
+                                <li><a href="HostelView.aspx">Hostel View</a></li>
+                            </ul>
+                        </div>
+                        <a class="menuitem submenuheader" href="#">Transport Setup</a>
+                        <div class="submenu">
+                            <ul>
+                                <li><a href="TransportSetup.aspx">Transport Setup</a></li>
+                                <li><a href="TransportView.aspx">View Transport</a></li>
+                            </ul>
+                        </div>
+                        <a class="menuitem submenuheader" href="#">Exam Management</a>
+                        <div class="submenu">
+                            <ul>
+                                <li><a href="ExamSetup.aspx">Exam Setup</a></li>
+                                <li><a href="ExamResultSetup.aspx">Add Exam Result</a></li>
+                                <li><a href="ExamRoutineSetup.aspx">Add Exam Routine</a></li>
+                            </ul>
+                        </div>
+                        <a class="menuitem submenuheader" href="#">Faculty Setup</a>
+                        <div class="submenu">
+                            <ul>
+                                <li><a href="ClassAdd.aspx">Add New Class</a></li>
+                                <li><a href="ClassView.aspx">View Class</a></li>
+                                <li><a href="ClassSubjectsAdd.aspx">Add New Subjects</a></li>
+                                <li><a href="ClassSubjectsView.aspx">View Subjects</a></li>
+                                <li><a href="#">Add New Department</a></li>
+                                <li><a href="#">View Department</a></li>
+                            </ul>
+                        </div>
+                        <a class="menuitem submenuheader" href="#">Teacher Setup</a>
+                        <div class="submenu">
+                            <ul>
+                                <li><a href="TeacherAdd.aspx">Add New Teacher</a></li>
+                                <li><a href="TeacherView.aspx">View Teacher</a></li>
+                            </ul>
+                        </div>
+                        <a class="menuitem submenuheader" href="#">Staff Management</a>
+                        <div class="submenu">
+                            <ul>
+                                <li><a href="StaffAdd.aspx">Add New Staff</a></li>
+                                <li><a href="StaffView.aspx">View Staff</a></li>
+                            </ul>
+                        </div>
+                        <a class="menuitem submenuheader" href="#">Account Panel</a>
+                        <div class="submenu">
+                            <ul>
+                                <li><a href="#">Cash Register</a></li>
+                                <li><a href="#">Student Ledger</a></li>
+                                <li><a href="#">Student Balance</a></li>
+                            </ul>
+                        </div>
+                        <a class="menuitem submenuheader" href="#">User Setup</a>
+                        <div class="submenu">
+                            <ul>
+                                <li><a href="UserCreate.aspx">Create User</a></li>
+                                <li><a href="UserRoleCreate.aspx">User Role Setup</a></li>
+                                <li><a href="UserView.aspx">User View</a></li>
+                            </ul>
+                        </div>
+                        <a class="menuitem submenuheader last" href="#">Reports</a>
+                        <div class="submenu">
+                            <ul>
+                                <li><a href="#">Student Report</a></li>
+                                <li><a href="#">Ledger Report</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="content_box_main">
+                    <div class="content_box_main_left">
+                        <asp:SiteMapPath ID="SiteMapPath1" runat="server" CssClass="breadcrumbs">
+                        </asp:SiteMapPath>
+                        <asp:SiteMapDataSource ID="SiteMapDataSource2" runat="server" />
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolderBody" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                    <div class="content_box_main_right">
+                        <img src="Resources/images/edu.jpg" width="95%" />
+                    </div>
+                    <div class="clear">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clear">
+        </div>
+        <%------------------------------content Section-------------------------------%>
+        <%------------------------------footer Section-------------------------------%>
+        <div id="footer">
+            <div class="footer_box">
+                <div class="copyright">
+                    <div class="colms_2">
+                        <p>
+                            Copyright &copy;
+                            <%: DateTime.Now.Year %>
+                            Education.com. | All rights reserved</p>
+                    </div>
+                    <div class="colms_2">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <%------------------------------footer Section-------------------------------%>
+        </form>
+    </div>
+    <%------------------------------container Section-------------------------------%>
+</body>
+</html>

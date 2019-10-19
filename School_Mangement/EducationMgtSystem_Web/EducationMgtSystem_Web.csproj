@@ -1,0 +1,703 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C42445AE-3AD5-44FF-B9F0-42299B17A698}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EducationMgtSystem_Web</RootNamespace>
+    <AssemblyName>EducationMgtSystem_Web</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=3.5.7.123, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="BAL_EducationMgtSystem">
+      <HintPath>..\BAL_EducationMgtSystem\bin\Debug\BAL_EducationMgtSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="BEL_EducationMgtSystem">
+      <HintPath>..\BEL_EducationMgtSystem\bin\Debug\BEL_EducationMgtSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AboutUs.aspx" />
+    <Content Include="admin\Authentication.aspx" />
+    <Content Include="admin\BookAccept.aspx" />
+    <Content Include="admin\BookAdd.aspx" />
+    <Content Include="admin\BookBorrowCreate.aspx" />
+    <Content Include="admin\BookBorrowerList.aspx" />
+    <Content Include="admin\BookLibraryMemberAdd.aspx" />
+    <Content Include="admin\BookLibraryMemberView.aspx" />
+    <Content Include="admin\BookView.aspx" />
+    <Content Include="admin\ClassAdd.aspx" />
+    <Content Include="admin\ClassRoutineAdd.aspx" />
+    <Content Include="admin\ClassRoutineView.aspx" />
+    <Content Include="admin\ClassSubjectsAdd.aspx" />
+    <Content Include="admin\ClassSubjectsView.aspx" />
+    <Content Include="admin\ClassView.aspx" />
+    <Content Include="admin\Default.aspx" />
+    <Content Include="admin\ExamResultSetup.aspx" />
+    <Content Include="admin\ExamRoutineSetup.aspx" />
+    <Content Include="admin\ExamSetup.aspx" />
+    <Content Include="admin\FeesInstallment.aspx" />
+    <Content Include="admin\FeesInstallmentView.aspx" />
+    <Content Include="admin\HostelManagement.aspx" />
+    <Content Include="admin\HostelView.aspx" />
+    <Content Include="admin\menu\account.png" />
+    <Content Include="admin\menu\add.png" />
+    <Content Include="admin\menu\ddsmoothmenu.css" />
+    <Content Include="admin\menu\ddsmoothmenu.js" />
+    <Content Include="admin\menu\down.gif" />
+    <Content Include="admin\menu\home.png" />
+    <Content Include="admin\menu\report.png" />
+    <Content Include="admin\Resources\ico\add.png" />
+    <Content Include="admin\Resources\ico\add_green.png" />
+    <Content Include="admin\Resources\ico\busy-small-rotating-arrows.gif" />
+    <Content Include="admin\Resources\ico\cio-services.png" />
+    <Content Include="admin\Resources\ico\cross.png" />
+    <Content Include="admin\Resources\ico\delete.png" />
+    <Content Include="admin\Resources\ico\edit.png" />
+    <Content Include="admin\Resources\ico\facebook.png" />
+    <Content Include="admin\Resources\ico\googleplus.png" />
+    <Content Include="admin\Resources\ico\home.png" />
+    <Content Include="admin\Resources\ico\home_icon.png" />
+    <Content Include="admin\Resources\ico\icon-check-01.gif" />
+    <Content Include="admin\Resources\ico\it-ms.png" />
+    <Content Include="admin\Resources\ico\linkedin.png" />
+    <Content Include="admin\Resources\ico\network-management.png" />
+    <Content Include="admin\Resources\ico\on-demand.png" />
+    <Content Include="admin\Resources\ico\pay.png" />
+    <Content Include="admin\Resources\ico\person_avatar_32.png" />
+    <Content Include="admin\Resources\ico\right_arrow.png" />
+    <Content Include="admin\Resources\ico\save.png" />
+    <Content Include="admin\Resources\ico\search-close.png" />
+    <Content Include="admin\Resources\ico\search.png" />
+    <Content Include="admin\Resources\ico\server-management.png" />
+    <Content Include="admin\Resources\ico\skype.png" />
+    <Content Include="admin\Resources\ico\spinner-ongray.gif" />
+    <Content Include="admin\Resources\ico\tick.png" />
+    <Content Include="admin\Resources\ico\tools.png" />
+    <Content Include="admin\Resources\ico\twitter.png" />
+    <Content Include="admin\Resources\ico\webdesigncompany.png" />
+    <Content Include="admin\Resources\ico\youtube.png" />
+    <Content Include="admin\Resources\images\abaacorplogo.png" />
+    <Content Include="admin\Resources\images\bg-texture.jpg" />
+    <Content Include="admin\Resources\images\edu.jpg" />
+    <Content Include="admin\Resources\images\header_bg.png" />
+    <Content Include="admin\Resources\images\mini_bg.png" />
+    <Content Include="admin\Resources\images\no_image.png" />
+    <Content Include="admin\Resources\images\texture.png" />
+    <Content Include="admin\StaffAdd.aspx" />
+    <Content Include="admin\StaffView.aspx" />
+    <Content Include="admin\StudentsAdd.aspx" />
+    <Content Include="admin\StudentsAttendence.aspx" />
+    <Content Include="admin\StudentsList.aspx" />
+    <Content Include="admin\Style\content.css" />
+    <Content Include="admin\Style\default_style.css" />
+    <Content Include="admin\Style\font.css" />
+    <Content Include="admin\Style\footer.css" />
+    <Content Include="admin\Style\global_style.css" />
+    <Content Include="admin\Style\header.css" />
+    <Content Include="admin\Style\layout_style.css" />
+    <Content Include="admin\Style\paging_style.css" />
+    <Content Include="admin\Style\reset.css" />
+    <Content Include="admin\TeacherAdd.aspx" />
+    <Content Include="admin\TeacherView.aspx" />
+    <Content Include="admin\TransportSetup.aspx" />
+    <Content Include="admin\TransportView.aspx" />
+    <Content Include="admin\UserCreate.aspx" />
+    <Content Include="admin\UserRoleCreate.aspx" />
+    <Content Include="admin\UserView.aspx" />
+    <Content Include="admin\v_menu\ddaccordion.js" />
+    <Content Include="admin\v_menu\ddmenu.js" />
+    <Content Include="admin\v_menu\ddmenu_style.css" />
+    <Content Include="admin\v_menu\minus.png" />
+    <Content Include="admin\v_menu\plus.png" />
+    <Content Include="ApplyOnline.aspx" />
+    <Content Include="ContactUs.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="menu\account.png" />
+    <Content Include="menu\add.png" />
+    <Content Include="menu\ddsmoothmenu.css" />
+    <Content Include="menu\ddsmoothmenu.js" />
+    <Content Include="menu\down.gif" />
+    <Content Include="menu\home.png" />
+    <Content Include="menu\report.png" />
+    <Content Include="Resources\ico\add.png" />
+    <Content Include="Resources\ico\add_green.png" />
+    <Content Include="Resources\ico\busy-small-rotating-arrows.gif" />
+    <Content Include="Resources\ico\cio-services.png" />
+    <Content Include="Resources\ico\cross.png" />
+    <Content Include="Resources\ico\delete.png" />
+    <Content Include="Resources\ico\edit.png" />
+    <Content Include="Resources\ico\facebook.png" />
+    <Content Include="Resources\ico\googleplus.png" />
+    <Content Include="Resources\ico\home.png" />
+    <Content Include="Resources\ico\home_icon.png" />
+    <Content Include="Resources\ico\icon-check-01.gif" />
+    <Content Include="Resources\ico\it-ms.png" />
+    <Content Include="Resources\ico\linkedin.png" />
+    <Content Include="Resources\ico\network-management.png" />
+    <Content Include="Resources\ico\on-demand.png" />
+    <Content Include="Resources\ico\pay.png" />
+    <Content Include="Resources\ico\person_avatar_32.png" />
+    <Content Include="Resources\ico\right_arrow.png" />
+    <Content Include="Resources\ico\save.png" />
+    <Content Include="Resources\ico\search-close.png" />
+    <Content Include="Resources\ico\search.png" />
+    <Content Include="Resources\ico\server-management.png" />
+    <Content Include="Resources\ico\skype.png" />
+    <Content Include="Resources\ico\spinner-ongray.gif" />
+    <Content Include="Resources\ico\tick.png" />
+    <Content Include="Resources\ico\twitter.png" />
+    <Content Include="Resources\ico\webdesigncompany.png" />
+    <Content Include="Resources\ico\youtube.png" />
+    <Content Include="Resources\images\abaacorplogo.png" />
+    <Content Include="Resources\images\bg-texture.jpg" />
+    <Content Include="Resources\images\edu.jpg" />
+    <Content Include="Resources\images\header_bg.png" />
+    <Content Include="Resources\images\mini_bg.png" />
+    <Content Include="Resources\images\no_image.png" />
+    <Content Include="Resources\images\texture.png" />
+    <Content Include="student\Default.aspx" />
+    <Content Include="student\menu\account.png" />
+    <Content Include="student\menu\add.png" />
+    <Content Include="student\menu\ddsmoothmenu.css" />
+    <Content Include="student\menu\ddsmoothmenu.js" />
+    <Content Include="student\menu\down.gif" />
+    <Content Include="student\menu\home.png" />
+    <Content Include="student\menu\report.png" />
+    <Content Include="student\Resources\ico\add.png" />
+    <Content Include="student\Resources\ico\add_green.png" />
+    <Content Include="student\Resources\ico\busy-small-rotating-arrows.gif" />
+    <Content Include="student\Resources\ico\cio-services.png" />
+    <Content Include="student\Resources\ico\cross.png" />
+    <Content Include="student\Resources\ico\delete.png" />
+    <Content Include="student\Resources\ico\edit.png" />
+    <Content Include="student\Resources\ico\facebook.png" />
+    <Content Include="student\Resources\ico\googleplus.png" />
+    <Content Include="student\Resources\ico\home.png" />
+    <Content Include="student\Resources\ico\home_icon.png" />
+    <Content Include="student\Resources\ico\icon-check-01.gif" />
+    <Content Include="student\Resources\ico\it-ms.png" />
+    <Content Include="student\Resources\ico\linkedin.png" />
+    <Content Include="student\Resources\ico\network-management.png" />
+    <Content Include="student\Resources\ico\on-demand.png" />
+    <Content Include="student\Resources\ico\pay.png" />
+    <Content Include="student\Resources\ico\person_avatar_32.png" />
+    <Content Include="student\Resources\ico\right_arrow.png" />
+    <Content Include="student\Resources\ico\save.png" />
+    <Content Include="student\Resources\ico\search-close.png" />
+    <Content Include="student\Resources\ico\search.png" />
+    <Content Include="student\Resources\ico\server-management.png" />
+    <Content Include="student\Resources\ico\skype.png" />
+    <Content Include="student\Resources\ico\spinner-ongray.gif" />
+    <Content Include="student\Resources\ico\tick.png" />
+    <Content Include="student\Resources\ico\twitter.png" />
+    <Content Include="student\Resources\ico\webdesigncompany.png" />
+    <Content Include="student\Resources\ico\youtube.png" />
+    <Content Include="student\Resources\images\abaacorplogo.png" />
+    <Content Include="student\Resources\images\bg-texture.jpg" />
+    <Content Include="student\Resources\images\header_bg.png" />
+    <Content Include="student\Resources\images\mini_bg.png" />
+    <Content Include="student\Resources\images\no_image.png" />
+    <Content Include="student\Resources\images\texture.png" />
+    <Content Include="student\Style\content.css" />
+    <Content Include="student\Style\default_style.css" />
+    <Content Include="student\Style\font.css" />
+    <Content Include="student\Style\footer.css" />
+    <Content Include="student\Style\global_style.css" />
+    <Content Include="student\Style\header.css" />
+    <Content Include="student\Style\layout_style.css" />
+    <Content Include="student\Style\reset.css" />
+    <Content Include="student\v_menu\ddaccordion.js" />
+    <Content Include="student\v_menu\ddmenu.js" />
+    <Content Include="student\v_menu\ddmenu_style.css" />
+    <Content Include="student\v_menu\minus.png" />
+    <Content Include="student\v_menu\plus.png" />
+    <Content Include="Style\content.css" />
+    <Content Include="Style\default_style.css" />
+    <Content Include="Style\font.css" />
+    <Content Include="Style\footer.css" />
+    <Content Include="Style\global_style.css" />
+    <Content Include="Style\header.css" />
+    <Content Include="Style\layout_style.css" />
+    <Content Include="Style\reset.css" />
+    <Content Include="teachers\Default.aspx" />
+    <Content Include="teachers\menu\account.png" />
+    <Content Include="teachers\menu\add.png" />
+    <Content Include="teachers\menu\ddsmoothmenu.css" />
+    <Content Include="teachers\menu\ddsmoothmenu.js" />
+    <Content Include="teachers\menu\down.gif" />
+    <Content Include="teachers\menu\home.png" />
+    <Content Include="teachers\menu\report.png" />
+    <Content Include="teachers\Resources\ico\add.png" />
+    <Content Include="teachers\Resources\ico\add_green.png" />
+    <Content Include="teachers\Resources\ico\busy-small-rotating-arrows.gif" />
+    <Content Include="teachers\Resources\ico\cio-services.png" />
+    <Content Include="teachers\Resources\ico\cross.png" />
+    <Content Include="teachers\Resources\ico\delete.png" />
+    <Content Include="teachers\Resources\ico\edit.png" />
+    <Content Include="teachers\Resources\ico\facebook.png" />
+    <Content Include="teachers\Resources\ico\googleplus.png" />
+    <Content Include="teachers\Resources\ico\home.png" />
+    <Content Include="teachers\Resources\ico\home_icon.png" />
+    <Content Include="teachers\Resources\ico\icon-check-01.gif" />
+    <Content Include="teachers\Resources\ico\it-ms.png" />
+    <Content Include="teachers\Resources\ico\linkedin.png" />
+    <Content Include="teachers\Resources\ico\network-management.png" />
+    <Content Include="teachers\Resources\ico\on-demand.png" />
+    <Content Include="teachers\Resources\ico\pay.png" />
+    <Content Include="teachers\Resources\ico\person_avatar_32.png" />
+    <Content Include="teachers\Resources\ico\right_arrow.png" />
+    <Content Include="teachers\Resources\ico\save.png" />
+    <Content Include="teachers\Resources\ico\search-close.png" />
+    <Content Include="teachers\Resources\ico\search.png" />
+    <Content Include="teachers\Resources\ico\server-management.png" />
+    <Content Include="teachers\Resources\ico\skype.png" />
+    <Content Include="teachers\Resources\ico\spinner-ongray.gif" />
+    <Content Include="teachers\Resources\ico\tick.png" />
+    <Content Include="teachers\Resources\ico\twitter.png" />
+    <Content Include="teachers\Resources\ico\webdesigncompany.png" />
+    <Content Include="teachers\Resources\ico\youtube.png" />
+    <Content Include="teachers\Resources\images\abaacorplogo.png" />
+    <Content Include="teachers\Resources\images\bg-texture.jpg" />
+    <Content Include="teachers\Resources\images\header_bg.png" />
+    <Content Include="teachers\Resources\images\mini_bg.png" />
+    <Content Include="teachers\Resources\images\no_image.png" />
+    <Content Include="teachers\Resources\images\texture.png" />
+    <Content Include="teachers\Style\content.css" />
+    <Content Include="teachers\Style\default_style.css" />
+    <Content Include="teachers\Style\font.css" />
+    <Content Include="teachers\Style\footer.css" />
+    <Content Include="teachers\Style\global_style.css" />
+    <Content Include="teachers\Style\header.css" />
+    <Content Include="teachers\Style\layout_style.css" />
+    <Content Include="teachers\Style\reset.css" />
+    <Content Include="teachers\v_menu\ddaccordion.js" />
+    <Content Include="teachers\v_menu\ddmenu.js" />
+    <Content Include="teachers\v_menu\ddmenu_style.css" />
+    <Content Include="teachers\v_menu\minus.png" />
+    <Content Include="teachers\v_menu\plus.png" />
+    <Content Include="v_menu\ddaccordion.js" />
+    <Content Include="v_menu\ddmenu.js" />
+    <Content Include="v_menu\ddmenu_style.css" />
+    <Content Include="v_menu\minus.png" />
+    <Content Include="v_menu\plus.png" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutUs.aspx.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AboutUs.aspx.designer.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Authentication.aspx.cs">
+      <DependentUpon>Authentication.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Authentication.aspx.designer.cs">
+      <DependentUpon>Authentication.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\BookAccept.aspx.cs">
+      <DependentUpon>BookAccept.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\BookAccept.aspx.designer.cs">
+      <DependentUpon>BookAccept.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\BookAdd.aspx.cs">
+      <DependentUpon>BookAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\BookAdd.aspx.designer.cs">
+      <DependentUpon>BookAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\BookBorrowCreate.aspx.cs">
+      <DependentUpon>BookBorrowCreate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\BookBorrowCreate.aspx.designer.cs">
+      <DependentUpon>BookBorrowCreate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\BookBorrowerList.aspx.cs">
+      <DependentUpon>BookBorrowerList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\BookBorrowerList.aspx.designer.cs">
+      <DependentUpon>BookBorrowerList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\BookLibraryMemberAdd.aspx.cs">
+      <DependentUpon>BookLibraryMemberAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\BookLibraryMemberAdd.aspx.designer.cs">
+      <DependentUpon>BookLibraryMemberAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\BookLibraryMemberView.aspx.cs">
+      <DependentUpon>BookLibraryMemberView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\BookLibraryMemberView.aspx.designer.cs">
+      <DependentUpon>BookLibraryMemberView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\BookView.aspx.cs">
+      <DependentUpon>BookView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\BookView.aspx.designer.cs">
+      <DependentUpon>BookView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\ClassAdd.aspx.cs">
+      <DependentUpon>ClassAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\ClassAdd.aspx.designer.cs">
+      <DependentUpon>ClassAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\ClassRoutineAdd.aspx.cs">
+      <DependentUpon>ClassRoutineAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\ClassRoutineAdd.aspx.designer.cs">
+      <DependentUpon>ClassRoutineAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\ClassRoutineView.aspx.cs">
+      <DependentUpon>ClassRoutineView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\ClassRoutineView.aspx.designer.cs">
+      <DependentUpon>ClassRoutineView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\ClassSubjectsAdd.aspx.cs">
+      <DependentUpon>ClassSubjectsAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\ClassSubjectsAdd.aspx.designer.cs">
+      <DependentUpon>ClassSubjectsAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\ClassSubjectsView.aspx.cs">
+      <DependentUpon>ClassSubjectsView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\ClassSubjectsView.aspx.designer.cs">
+      <DependentUpon>ClassSubjectsView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\ClassView.aspx.cs">
+      <DependentUpon>ClassView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\ClassView.aspx.designer.cs">
+      <DependentUpon>ClassView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\ExamResultSetup.aspx.cs">
+      <DependentUpon>ExamResultSetup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\ExamResultSetup.aspx.designer.cs">
+      <DependentUpon>ExamResultSetup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\ExamRoutineSetup.aspx.cs">
+      <DependentUpon>ExamRoutineSetup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\ExamRoutineSetup.aspx.designer.cs">
+      <DependentUpon>ExamRoutineSetup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\ExamSetup.aspx.cs">
+      <DependentUpon>ExamSetup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\ExamSetup.aspx.designer.cs">
+      <DependentUpon>ExamSetup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\FeesInstallment.aspx.cs">
+      <DependentUpon>FeesInstallment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\FeesInstallment.aspx.designer.cs">
+      <DependentUpon>FeesInstallment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\FeesInstallmentView.aspx.cs">
+      <DependentUpon>FeesInstallmentView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\FeesInstallmentView.aspx.designer.cs">
+      <DependentUpon>FeesInstallmentView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\HostelManagement.aspx.cs">
+      <DependentUpon>HostelManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\HostelManagement.aspx.designer.cs">
+      <DependentUpon>HostelManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\HostelView.aspx.cs">
+      <DependentUpon>HostelView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\HostelView.aspx.designer.cs">
+      <DependentUpon>HostelView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="admin\StaffAdd.aspx.cs">
+      <DependentUpon>StaffAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\StaffAdd.aspx.designer.cs">
+      <DependentUpon>StaffAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\StaffView.aspx.cs">
+      <DependentUpon>StaffView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\StaffView.aspx.designer.cs">
+      <DependentUpon>StaffView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\StudentsAdd.aspx.cs">
+      <DependentUpon>StudentsAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\StudentsAdd.aspx.designer.cs">
+      <DependentUpon>StudentsAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\StudentsAttendence.aspx.cs">
+      <DependentUpon>StudentsAttendence.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\StudentsAttendence.aspx.designer.cs">
+      <DependentUpon>StudentsAttendence.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\StudentsList.aspx.cs">
+      <DependentUpon>StudentsList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\StudentsList.aspx.designer.cs">
+      <DependentUpon>StudentsList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\TeacherAdd.aspx.cs">
+      <DependentUpon>TeacherAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\TeacherAdd.aspx.designer.cs">
+      <DependentUpon>TeacherAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\TeacherView.aspx.cs">
+      <DependentUpon>TeacherView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\TeacherView.aspx.designer.cs">
+      <DependentUpon>TeacherView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\TransportSetup.aspx.cs">
+      <DependentUpon>TransportSetup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\TransportSetup.aspx.designer.cs">
+      <DependentUpon>TransportSetup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\TransportView.aspx.cs">
+      <DependentUpon>TransportView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\TransportView.aspx.designer.cs">
+      <DependentUpon>TransportView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\UserCreate.aspx.cs">
+      <DependentUpon>UserCreate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\UserCreate.aspx.designer.cs">
+      <DependentUpon>UserCreate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\UserRoleCreate.aspx.cs">
+      <DependentUpon>UserRoleCreate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\UserRoleCreate.aspx.designer.cs">
+      <DependentUpon>UserRoleCreate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\UserView.aspx.cs">
+      <DependentUpon>UserView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\UserView.aspx.designer.cs">
+      <DependentUpon>UserView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ApplyOnline.aspx.cs">
+      <DependentUpon>ApplyOnline.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ApplyOnline.aspx.designer.cs">
+      <DependentUpon>ApplyOnline.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContactUs.aspx.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContactUs.aspx.designer.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="student\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="student\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="student\Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="student\Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="teachers\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="teachers\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="teachers\Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="teachers\Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="admin\Reports\" />
+    <Folder Include="Dataset\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="admin\Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.sitemap" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="admin\Web_Admin.sitemap" />
+    <Content Include="student\Site.Master" />
+    <Content Include="teachers\Site.Master" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>54961</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

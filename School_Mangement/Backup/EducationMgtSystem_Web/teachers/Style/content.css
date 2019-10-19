@@ -1,0 +1,93 @@
+﻿.content_box
+{
+    padding: 10px;
+}
+.content_box_aside
+{
+    margin: 0 auto;
+    width: 18%;
+    min-height: 400px;
+    float: left;
+    display: block;
+    margin-top: 0px;
+    border-right: 1px solid #eee;
+}
+.content_box_main
+{
+    margin: 0 auto;
+    width: 81.5%;
+    min-height: 400px;
+    float: right;
+    display: block;
+    margin-top: 0px;
+    border-left: 1px solid #eee;
+    padding-top: 0px;
+    padding-bottom: 20px;
+}
+
+/*....................................*/
+.content_box_main_left
+{
+    margin: 0 auto;
+    width: 81.5%;
+    float: left;
+    display: block;
+    border-right: 1px solid #eee;
+}
+/*....................................*/
+.content_box_main_right
+{
+    margin: 0 auto;
+    width: 18%;
+    float: right;
+    display: block;
+}
+/*....................................*/
+
+.content_box fieldset
+{
+    border: 1px solid #ddd;
+    width: 96% !important;
+    padding: 10px;
+    margin-left: 8px;
+    margin-bottom: 10px;
+}
+.content_box legend
+{
+    font-size: 13px;
+    color: Silver;
+}
+.content_box table
+{
+    width: 100%;
+}
+.topic_title
+{
+    position: relative;
+    height: 40px;
+    background: #fff url(../Resources/images/mini_bg.png);
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #eee;
+    margin-top: 2px;
+}
+.topic_title img
+{
+    float: left;
+    width: 40px;
+}
+.topic_title h2
+{
+    margin-top: 7px;
+    margin-left: 5px;
+    float: left;
+}
+.topic_details
+{
+    margin-top: 10px;
+}
+.topic_submit
+{
+    margin-top: 7px;
+    margin-left: 10px;
+    width: 70%;
+}

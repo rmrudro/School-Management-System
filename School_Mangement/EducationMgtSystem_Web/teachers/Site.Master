@@ -1,0 +1,134 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="EducationMgtSystem_Web.teachers.Site" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head id="Head1" runat="server">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="Education Mgt System, Education, system" />
+    <meta name="robots" content="default, follow" />
+    <meta name="author" content="Administrator" />
+    <meta name="googlebot" content="noodp" />
+    <meta name="application-name" content="EducationMgtSystem_Web" />
+    <link rel="Shortcut Icon" href="http://education.com/Resources/ico/fvicon.png" />
+    <link href="Style/global_style.css" rel="stylesheet" type="text/css" />
+    <link href="Style/layout_style.css" rel="stylesheet" type="text/css" />
+    <link href="Style/font.css" rel="stylesheet" type="text/css" />
+    <link href="Style/default_style.css" rel="stylesheet" type="text/css" />
+    <!-- =====================menu link start ======================-->
+    <link rel="stylesheet" type="text/css" href="menu/ddsmoothmenu.css" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+    <script type="text/javascript" src="menu/ddsmoothmenu.js"></script>
+    <script type="text/javascript">
+        ddsmoothmenu.init({ mainmenuid: "smoothmenu1", orientation: 'h', classname: 'ddsmoothmenu', contentsource: "markup" })
+    </script>
+    <!--=================== menu link End===================== -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script type="text/javascript" src="v_menu/ddaccordion.js"></script>
+    <script type="text/javascript" src="v_menu/ddmenu.js"></script>
+    <link href="v_menu/ddmenu_style.css" rel="stylesheet" type="text/css" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body id="page">
+    <%------------------------------container Section-------------------------------%>
+    <div id="container">
+        <form id="form1" runat="server">
+        <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+        <%------------------------------Header Section-------------------------------%>
+        <div id="header">
+            <div class="header_box">
+                <div class="logo">
+                    <a href="Default.aspx" title="Home">
+                        <h2>
+                            ABCOIT Education Mgt. System</h2>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <%------------------------------Header Section-------------------------------%>
+        <%------------------------------navigation Section-------------------------------%>
+        <div id="navigation">
+            <div class="navigation_box">
+                <div id="smoothmenu1" class="ddsmoothmenu">
+                    <ul>
+                        <li><a href="Default.aspx" title="Home Page">
+                            <img src="menu/home.png"></a></li>
+                        <li><a href="StudentsAdd.aspx" title="Students">
+                            <img src="menu/add.png"></a></li>
+                        <li><a href="StudentsAdd.aspx" title="Account">
+                            <img src="menu/account.png"></a></li>
+                        <li><a class="last" href="StudentsAdd.aspx" title="Reports">
+                            <img src="menu/report.png"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <%------------------------------navigation Section-------------------------------%>
+        <%------------------------------content Section-------------------------------%>
+        <div id="content">
+            <div class="content_box">
+                <div class="content_box_aside">
+                    <div class="glossymenu">
+                        <a class="menuitem" href="Default.aspx">Home Page</a> <a class="menuitem submenuheader"
+                            href="#">Teacher's Forum</a>
+                        <div class="submenu">
+                            <ul>
+                                <li><a href="ApplyOnline.aspx">Join Forum</a></li>
+                            </ul>
+                        </div>
+                        <a class="menuitem submenuheader" href="#">Clas Routine</a>
+                        <div class="submenu">
+                            <ul>
+                                <li><a href="#">View Routine</a></li>
+                            </ul>
+                        </div>
+                        <a class="menuitem submenuheader" href="#">Assignment Setup</a>
+                        <div class="submenu">
+                            <ul>
+                                <li><a href="#">Submit Assignments</a></li>
+                                <li><a href="#">View Assignments</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="content_box_main">
+                    <div class="content_box_main_left">
+                        <asp:SiteMapPath ID="SiteMapPath1" runat="server" CssClass="breadcrumbs">
+                        </asp:SiteMapPath>
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolderBody" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                    <div class="content_box_main_right">
+                        Space for ad
+                    </div>
+                    <div class="clear">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clear">
+        </div>
+        <%------------------------------content Section-------------------------------%>
+        <%------------------------------footer Section-------------------------------%>
+        <div id="footer">
+            <div class="footer_box">
+                <div class="copyright">
+                    <div class="colms_2">
+                        <p>
+                            Copyright &copy;
+                            <%: DateTime.Now.Year %>
+                            Education.com. | All rights reserved</p>
+                    </div>
+                    <div class="colms_2">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <%------------------------------footer Section-------------------------------%>
+        </form>
+    </div>
+    <%------------------------------container Section-------------------------------%>
+</body>
+</html>

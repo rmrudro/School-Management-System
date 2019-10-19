@@ -1,0 +1,63 @@
+﻿.header_box
+{
+    padding: 10px;
+    height: 70px;
+}
+.logo
+{
+    width: 450px;
+    height: 50px;
+    display: block;
+    font-size: 25px;
+    text-transform: uppercase;
+    padding-top: 5px;
+    color: #09F;
+}
+.logo img
+{
+    width: 120px;
+    height: 100px;
+}
+.logo h2
+{
+    font-size: 22px;
+    text-transform: uppercase;
+    padding-top: 35px;
+    color: #07b1ef;
+}
+.navigation_box
+{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: 35px;
+    position: relative;
+}
+.User_LoginPanel
+{
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    color: #fff;
+}
+.User_LoginPanel Label
+{
+    color: #fff;
+}
+.User_LoginPanel a
+{
+    color: #fff;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+.User_LoginPanel a:hover
+{
+    color: #eee;
+}
+.User_LoginPanel .user_label
+{
+    color: Silver;
+}
